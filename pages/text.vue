@@ -1,23 +1,28 @@
 <template>
 	<TheHeader />
-	<div class="flex flex-col items-center w-full h-screen bg-base-300">
-		<h1 class="mt-20 text-3xl font-bold">Latest blog posts</h1>
+	<div>
+		<h1>Here is a blog that I am building.</h1>
 
-		<div class="grid col-auto">
-			<div class="w-1/4" v-for="article in articles" :key="article.slug">
-				{{article.title}}
-			</div>
-			
-		</div>
-		
+		<p>I will also try to save some v bindings here in this markdown.</p>
+
+		<p>{{ message }}</p>
+
+		<input type="text" v-model="message">
+
+
 	</div>
 
 
 </template>
 
 <script setup>
-	const articles = ref(null)
-	articles.value = await queryContent('articles').find()
+		const message = ref(null)
 
-	console.log(JSON.stringify(articles.value))
+		message.value = 'welcome to the jungle!'
+
+		const changeMessage = (e) => {
+			message.value = e.target.value
+			console.log('message changed!')
+		}
+
 </script>

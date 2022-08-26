@@ -6,4 +6,3 @@ thumbnail: /images/code.jpeg
 
 ---
 
-# This is a heading

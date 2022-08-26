@@ -4,5 +4,3 @@ description: Just a test
 thumbnail: /images/matrix.jpg
 
 ---
-
-# Here is the heading of the second post.
