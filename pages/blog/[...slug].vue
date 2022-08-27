@@ -1,17 +1,20 @@
 <template>
 	
-	<TheHeader />
-	<article>
+	<article class="min-h-screen w-full bg-primary">
 		<ContentDoc :path="path" />
 	</article>
+
+	
 </template>
 
 <script setup>
+
 	const route = useRoute()
 
 	const slug = route.params.slug
 
 	const path = 'articles/' + slug
+	
 
 	const message = ref(null)
 

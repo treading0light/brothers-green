@@ -1,12 +1,12 @@
 <template>
+  <div>
+    <Intro/>
 
-  <TheHeader/>
+    <BigPic v-bind:message="image.message" :url="image.url" />
 
-  <Intro/>
-
-  <BigPic v-bind:message="image.message" :url="image.url" />
-
-  <button class="btn btn-primary self-center" @click="changeImage">Change Photo using JS!</button>
+    <button class="btn btn-primary self-center" @click="changeImage">Change Photo using JS!</button>
+  </div>
+  
 
 </template>
 

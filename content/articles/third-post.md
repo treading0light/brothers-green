@@ -2,6 +2,7 @@
 title: My Third BlogPost
 description: Just a test
 thumbnail: /images/code.jpeg
+slug: third-post
 
 ---
 

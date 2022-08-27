@@ -1,9 +1,13 @@
 <template>
-	<div class="w-screen h-20 top-0 flex justify-end items-center bg-slate-300 gap-5">
-		<NuxtLink to="#">Home</NuxtLink>
-		<a class="mr-10" href="www.github.com">github</a>
+	<div class="navbar bg-base-100 flex justify-end">
 
-	</div>
+	  <div>
+	    <ul class="menu menu-horizontal p-0">
+	      <li><NuxtLink to="/">Home</NuxtLink></li>
+	      <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+	    </ul>
+	  </div>
+</div>
 </template>
 
 <script setup>

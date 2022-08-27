@@ -2,7 +2,7 @@
 title: My Second BlogPost
 description: Just a test
 thumbnail: /images/matrix.jpg
+slug: second-post
 
 ---
 
-# Here is the heading of the second post.
