@@ -1,6 +1,6 @@
 <template>
-	
-	<article class="min-h-screen w-full bg-primary">
+
+	<article class="min-h-screen w-full bg-base-100">
 		<ContentDoc :path="path" />
 	</article>
 
@@ -9,14 +9,11 @@
 
 <script setup>
 
+	// ContentDoc shouldn't need path defined but it does...
 	const route = useRoute()
 
 	const slug = route.params.slug
 
 	const path = 'articles/' + slug
 	
-
-	const message = ref(null)
-
-	message.value = 'welcome to the jungle!'
 </script>

@@ -1,5 +1,5 @@
 <template>
-	<div class="navbar bg-base-100 flex justify-end">
+	<div class="navbar bg-base-300 flex justify-end">
 
 	  <div>
 	    <ul class="menu menu-horizontal p-0">
@@ -24,9 +24,11 @@
 <script setup>
 
 	const themes = [
-		'cupcake',
+		'lofi',
 		'night',
-		'forest'
+		'forest',
+		'dracula',
+		'synthwave'
 	]
 
 	const emit = defineEmits(['themeSelected'])
@@ -36,8 +38,5 @@
 		// console.log('selecting theme: ' + newTheme)
 		emit('themeSelected', newTheme)
 	}
-
-
-
 	
 </script>
