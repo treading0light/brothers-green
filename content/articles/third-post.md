@@ -15,6 +15,5 @@ slug: third-post
 		<p>{{ message }}</p>
 
 		<input type="text" v-model="message">
-
-
-	</div>
+		
+		</div>
