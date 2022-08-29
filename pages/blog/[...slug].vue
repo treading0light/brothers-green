@@ -1,6 +1,6 @@
 <template>
 
-	<article class="min-h-screen w-full bg-base-100">
+	<article class="prose lg:prose-xl">
 		<ContentDoc :path="path" />
 	</article>
 

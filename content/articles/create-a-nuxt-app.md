@@ -3,6 +3,7 @@ title: How to Create a Nuxt 3 App
 description: A guide to setting up Nuxt 3 with TailwindCSS, Daisyui,
 thumbnail: /images/nuxtjs-logo.png
 slug: create-a-nuxt-app
+author: Tony Green
 
 ---
 
