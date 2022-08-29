@@ -1,5 +1,4 @@
 <template>
-	<TheHeader />
 	<div>
 		<h1>Here is a blog that I am building.</h1>
 
