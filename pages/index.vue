@@ -1,4 +1,9 @@
 <template>
+  <div class="avatar">
+  <div class="w-32 mask mask-triangle">
+    <img src="public/images/abstract banner1.jpeg" />
+  </div>
+</div>
   <div>
     <Intro/>
 
@@ -9,6 +14,7 @@
   
 
 </template>
+
 
 <script setup>
 
