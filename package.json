@@ -12,5 +12,8 @@
     "daisyui": "^2.22.0",
     "nuxt": "3.0.0-rc.6",
     "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "three": "^0.144.0"
   }
 }

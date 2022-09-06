@@ -7,6 +7,9 @@
 		
 	</div>
 	
+	<article class="prose lg:prose-xl prose-h1:bg-slate-500">
+		<ContentDoc :path="path" />
+	</article>
 
 	
 </template>

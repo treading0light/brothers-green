@@ -18,6 +18,5 @@ author: Tony Green
 		<p>{{ message }}</p>
 
 		<input type="text" v-model="message">
-
-
-	</div>
+		
+		</div>
