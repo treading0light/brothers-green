@@ -11,7 +11,7 @@
 
 <script setup>
 	const articles = ref(null)
-	articles.value = await queryContent('articles').find()
+	articles.value = await queryContent().find()
 
 	// console.log(JSON.stringify(articles.value))
 </script>

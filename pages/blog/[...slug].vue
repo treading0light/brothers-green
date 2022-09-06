@@ -1,19 +1,17 @@
 <template>
+	<div class="w-10/12 m-auto flex flex-col items-start">
 
-	<article class="prose lg:prose-xl">
-		<ContentDoc :path="path" />
-	</article>
+		<BlogHeader :path="path" />
+
+		<ContentDoc class="prose lg:prose-xl" :path="path" />
+		
+	</div>
+	
 
 	
 </template>
 
 <script setup>
-
-	// ContentDoc shouldn't need path defined but it does...
 	const route = useRoute()
-
-	const slug = route.params.slug
-
-	const path = 'articles/' + slug
-	
+	const path = route.params.slug.toString()	
 </script>

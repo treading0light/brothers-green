@@ -30,5 +30,7 @@
 
 	const link = '/blog/' + props.article.slug
 
+	// console.log(JSON.stringify(props.article))
+
 	// console.log(props.article.link)
 </script>
