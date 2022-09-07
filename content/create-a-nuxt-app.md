@@ -42,7 +42,7 @@ From here you could run "npm install" and be up and running, but lets continue o
 # What is Tailwind?
 
 
-Tailwindcss is rapidly becoming the prefered method of css styling, and for good reason. Having a seperate stylesheet where you must flip back to your html, come up with good semantic names, and create styles that are difficult to maintain especially after a few months of not reading your css. Tailwind gives just about all of the css power that we love, but you put everything directly in the html element in the form of premade classes, like so:
+Tailwindcss is rapidly becoming the prefered method of css styling, and for good reason. Having a seperate stylesheet where you must flip back to your html, come up with good semantic names, and create styles that are difficult to maintain especially after a few months of not reading your css, can quickly become unmanageable. Tailwind gives just about all of the css power that we love, but you put everything directly in the html element in the form of pre-made classes, like so:
 
 `<div class="flex flex-col items-center">`
 
@@ -79,7 +79,7 @@ Daisyui is a free component library using tailwindcss. Once installed, you can t
 
 Installing Daisyui is easy. Just run the following in your terminal.
 
-`npm install daisyui`
+`npm install -D daisyui`
 
 Then add it to your plugins in your "tailwind.config.js" file.
 

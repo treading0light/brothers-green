@@ -3,6 +3,8 @@
 		<TheHeader @themeSelected="changeTheme" />
 
 		<NuxtPage />
+
+		<TheFooter />
 		
 	</div>
 	
