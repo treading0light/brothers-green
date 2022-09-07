@@ -1,10 +1,12 @@
 <template>
-  <div class="avatar">
-  <div class="w-32 mask mask-triangle">
-    <img src="public/images/abstract banner1.jpeg" />
-  </div>
-</div>
   <div>
+    
+    <div class="avatar">
+      <div class="w-32 mask mask-triangle">
+        <img src="public/images/abstract banner1.jpeg" />
+      </div>
+    </div>
+
     <Intro/>
 
     <BigPic v-bind:message="image.message" :url="image.url" />
@@ -12,7 +14,6 @@
     <button class="btn btn-primary self-center" @click="changeImage">Change Photo using JS!</button>
   </div>
   
-
 </template>
 
 

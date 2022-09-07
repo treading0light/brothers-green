@@ -4,7 +4,7 @@
 	  <div>
 	    <ul class="menu menu-horizontal p-0">
 
-	        <li class=""><NuxtLink to="/">Home</NuxtLink></li>
+	        <li><NuxtLink to="/">Home</NuxtLink></li>
 	        <li><NuxtLink to="/blog">Blog</NuxtLink></li>
 
 	        <li tabindex="0">

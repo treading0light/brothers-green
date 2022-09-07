@@ -4,6 +4,7 @@ description: Just a test
 thumbnail: /images/code.jpeg
 slug: third-post
 author: Tony Green
+draft: true
 
 ---
 

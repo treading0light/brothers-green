@@ -1,15 +1,15 @@
 <template>
-	<div class="w-10/12 m-auto flex flex-col items-start">
+	<div class="w-4/5 m-auto flex flex-col items-start lg:items-center">
 
 		<BlogHeader :path="path" />
 
-		<ContentDoc class="prose lg:prose-xl" :path="path" />
-		
+		<article class="prose w-full lg:prose-xl prose-code:bg-base-300 prose-code:text-base-content prose-code:p-5 prose-code:rounded-none prose-code:block prose-code:mb-20">
+			<ContentDoc class="" :path="path" />
+		</article>
+
 	</div>
 	
-	<article class="prose lg:prose-xl prose-h1:bg-slate-500">
-		<ContentDoc :path="path" />
-	</article>
+	
 
 	
 </template>

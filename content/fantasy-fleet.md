@@ -4,6 +4,7 @@ description: A fleet sim game aiming to be partially played using discord bots
 thumbnail: /images/fleet.png
 slug: fantasy-fleet
 author: Tony Green
+draft: true
 
 --- 
 
