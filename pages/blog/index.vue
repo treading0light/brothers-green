@@ -12,11 +12,10 @@
 </template>
 
 <script setup>
-	const articles = ref(null)
 
+	const route = useRoute()
 
-	articles.value = await queryContent().find()
-	
+	const articles = await queryContent().find()
 
-	// console.log(JSON.stringify(articles.value))
+	// console.log(JSON.stringify(articles))
 </script>
