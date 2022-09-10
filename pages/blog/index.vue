@@ -7,7 +7,7 @@
 
 				<ArticlePreview v-for="article in articles" :key="article.slug" :article="article" />
 
-		</div>	
+		</div>
 	</div>
 </template>
 
