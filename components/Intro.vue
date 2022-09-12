@@ -41,7 +41,7 @@
   #tony {
     font-weight: bold;
     text-align: center;
-    background: linear-gradient(60deg, red, yellow, red, yellow, red);
+    background: linear-gradient(60deg, red, yellow, red, yellow, red) fixed;
     background-attachment: local;
     box-shadow: 1em 0 0 #FFAA3B, -1em 0 0 #FFAA3B;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);

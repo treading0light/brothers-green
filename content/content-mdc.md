@@ -22,5 +22,5 @@ You can indeed use vue components inside markdown with an easy syntax. I have ho
     - returning to vue standard, lower case with hyphen in markdown "component-name" translates to uppercase no hyphen when searching for component file "ComponentName.vue"
 
 ::quick-aside
-Here is one component I have gotten to work.
+Here is one component I have gotten to work. adding lots more text to really test out the sizing of this unruly, perhaps unnecessary component.
 ::

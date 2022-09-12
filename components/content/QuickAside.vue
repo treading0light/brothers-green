@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<div class="relative text-right hover:cursor-pointer font-extrabold border border-accent underline">
-			<p @click="appear">Quick Aside</p>
-		</div>
+		<div @click="appear" class="relative w-fit float-right hover:cursor-pointer">
+			<p class="font-extrabold underline">Quick Aside</p>
 
-		<div id="quick" class="absolute bg-secondary text-secondary-content max-w-screen-2xl top-0 hidden">
-			<slot />
+			<div id="quick" class="absolute border-8 border-secondary rounded bg-base-300 text-base-content bottom-full -left-48 -sm:left-10 xl:left-40 p-5">
+				<slot />
+			</div>
 		</div>
 
 		
@@ -22,4 +22,10 @@
 		console.log('doing something')
 	}
 </script>
+
+<style>
+	#quick {
+		width: 300%;
+	}
+</style>
 
