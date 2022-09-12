@@ -1,6 +1,6 @@
 <template>
 	<div id="blog-header" class="w-full border-b-4 flex flex-col items-center gap-5 mb-10 pb-6">
-		<img :src="article.thumbnail" class="mt-10 border">
+		<img :src="article.thumbnail" class="mt-10 w-4/5">
 		<h1 class="text-5xl md:text-8xl">{{ article.title }}</h1>
 		<h2 class="text-xl md:text-5xl">{{ article.description }}</h2>
 
