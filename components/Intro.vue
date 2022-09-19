@@ -6,6 +6,7 @@
 
     <div id="brothers" class="w-1/2 flex justify-around overflow-hidden">
       <p id="tony" class="animate-slide ">{{ message }}</p>
+      <p id="josh" class="animate-slide">{{ message }}</p>
     </div>
     
 

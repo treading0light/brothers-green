@@ -20,7 +20,7 @@
 	const route = useRoute()
 	const slug = route.params.slug.toString()
 
-	console.log(slug)
+	// console.log(slug)
 
 	// ContentDoc :path=path
 
