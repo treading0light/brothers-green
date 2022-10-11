@@ -4,7 +4,7 @@
 			<p class="font-extrabold underline">Quick Aside</p>
 
 			<div id="quick" class="absolute border-8 border-secondary rounded bg-base-300 text-base-content bottom-full -left-48 -sm:left-10 xl:left-40 p-5">
-				<slot />
+				<p><slot /></p>
 			</div>
 		</div>
 

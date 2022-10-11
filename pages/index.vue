@@ -1,51 +1,26 @@
 <template>
-  <div>
+  <div class="flex flex-col items-center">
+
+    <div>
+      <h1>The Brothers</h1>
+    </div>
     
     <div class="avatar">
-      <div class="w-32 mask mask-triangle">
+      <div class="w-1/4 mask mask-triangle m-auto">
         <img src="/images/abstract_banner1.jpeg" />
       </div>
     </div>
 
-    <Intro/>
+    <div>
+      <h1>Green</h1>
+    </div>
 
-    <BigPic v-bind:message="image.message" :url="image.url" />
-
-    <button class="btn btn-primary self-center" @click="changeImage">Change Photo using JS!</button>
   </div>
   
 </template>
 
 
 <script setup>
-
-  
-
-  const image = ref({
-    message: 'This is a dynamic image',
-    url: 'assets/images/300zx.jpg'
-  })
-
-  
-
-  // const getImage = () => {
-  //   const imageData = {
-  //     message: 'This is a dynamic image',
-  //     url: 'assets/images/300zx.jpg'
-  //   }
-
-  //   image.value = imageData
-  // }
-
-  const changeImage = () => {
-    const imageData = {
-      message: 'Changed this at the press of a button!',
-      url: 'assets/images/crashed.jpg'
-    }
-
-    image.value = imageData
-  }
-
   
   
 </script>
