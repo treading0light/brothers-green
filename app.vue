@@ -1,5 +1,5 @@
 <template>
-	<div id="root" :data-theme="theme" class="bg-base-100 min-h-screen">
+	<div id="root" :data-theme="theme" class="">
 		<TheHeader @themeSelected="changeTheme" />
 
 		<NuxtPage />
