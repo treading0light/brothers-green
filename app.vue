@@ -4,7 +4,7 @@
 
 		<Background v-if="home == true" />
 
-		<NuxtPage />
+		<NuxtPage @isHome="markHome" />
 
 		<TheFooter />
 		
