@@ -1,10 +1,26 @@
 <template>
-  <div class="min-h-screen w-4/5 m-auto flex flex-col gap-10 items-center">
-    <Intro />
+  <div class="min-h-screen w-4/5 m-auto flex flex-col gap-32 items-center">
 
-    <h1 class="text-base-content text-5xl self-start">Something from the blog</h1>
+    <!-- <Background /> -->
 
-    <ArticlePreview class="w-1/2" :article="article" />
+    <div class="w-full mt-28 flex flex-col items-center gap-10 text-center text-base-content
+    text-5xl" style="z-index: 2; text-shadow: 5px 5px black; font-family: 'UnifrakturCook', cursive;;">
+      <h1>The Brothers</h1>
+      <h1>Green</h1>
+      <p class="text-xl">We can see the future.</p>
+    </div>
+
+    <div class="flex flex-col items-center w-1/2 gap-10 self-end p-10 bg-secondary bg-opacity-20 p-20" style="z-index: 2; text-shadow: 2px 2px black;">
+      <h1 class="text-base-content text-5xl self-start" style="">Something from the blog</h1>
+
+      <ArticlePreview v-if="article" class="w-1/2" :article="article" />
+    </div>
+
+    <div class="flex flex-col self-start bg-secondary bg-opacity-20 text-5xl gap-5 w-1/3 p-32" style="z-index: 2; text-shadow: 2px 2px black;">
+      <h1>Explore the artwork</h1>
+      <button @click="" class="btn">Explore</button>
+    </div>
+    
 
 
   </div>
@@ -15,20 +31,45 @@
 
 
 <script setup>
+
   const article = ref(null)
 
   const randInt = (max) => Math.floor(Math.random() * max)
 
-  const list = await queryContent().only(['slug']).find()
-  console.log(list)
+  const randomBlog = async () => {
 
-  const blogSlug = list[randInt(list.length -1)]
-  console.log(blogSlug)
-  const holder = await queryContent().where(blogSlug).find()
+    // get slugs from all posts as an array of objects
+    const list = await queryContent().only('slug').find()
 
-  article.value = holder[0]
+    // randomly select one slug object
+    const blogSlug = list[randInt(list.length -1)]
 
-  console.log(article.value[0])
+    // query single blog post, why an array?
+    const tinyArray = await queryContent().where(blogSlug).find()
+
+    console.log('tiny array', tinyArray[0])
+
+    article.value = tinyArray[0]
+
+  }
+
+  article.value = randomBlog()
+  console.log('article', article.value)
+
+  const emit = defineEmits(['isHome'])
+
+  const isHome = (bool) => emit('isHome', bool)
+
+  onMounted(() => {
+    isHome(true)
+    // article.value = randomBlog()
+    // console.log(article.value)
+  })
+
+  onUnmounted(() => {
+    isHome(false)
+  })
+  
 
   
 

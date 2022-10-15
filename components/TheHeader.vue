@@ -1,5 +1,5 @@
 <template>
-	<div class="navbar bg-base-300 flex justify-end">
+	<div class="navbar bg-base-300 flex justify-end" style="z-index: 20;">
 
 	  <div>
 	    <ul class="menu menu-horizontal p-0">
