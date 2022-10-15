@@ -4,7 +4,7 @@
 
 		<Background v-if="home == true" />
 
-		<NuxtPage @isHome="markHome" />
+		<NuxtPage />
 
 		<TheFooter />
 		
@@ -26,9 +26,3 @@
 
 
 </script>
-
-<style scoped>
-	#root {
-		/*background-color: white;*/
-	}
-</style>
