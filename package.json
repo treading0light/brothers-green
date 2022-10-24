@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "npx nuxi build & nuxt build",
+    "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "npx nuxi build & nuxt generate",
+    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "make-markdown": "node -e 'require(\"./cli.js\").generateMarkdown()'"
   },
