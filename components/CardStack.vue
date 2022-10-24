@@ -54,7 +54,6 @@
 
 		if (direction === 'forward') {
 			el = cards.shift()
-			// console.log(el)
 			cards.push(el)
 		} else {
 			el = cards.pop()
@@ -75,7 +74,6 @@
 			cards = Array.from(document.querySelectorAll('.my-card'))
 
 			rePosition(cards)
-			console.log(cards)
 		}, 100)
 	})
 
