@@ -6,6 +6,7 @@
 
 	        <li><NuxtLink to="/">Home</NuxtLink></li>
 	        <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+	        <li><NuxtLink to="/example/card-stack-example">Stack</NuxtLink></li>
 
 	        <li tabindex="0">
 		        <p>

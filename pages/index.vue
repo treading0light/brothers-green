@@ -10,13 +10,20 @@
       <p class="text-xl">We can see the future.</p>
     </div>
 
-    <div class="flex flex-col items-center w-1/2 gap-10 self-end p-10 bg-secondary bg-opacity-20 p-20" style="z-index: 2; text-shadow: 2px 2px black;">
-      <h1 class="text-base-content text-5xl self-start" style="">Something from the blog</h1>
+    <div class="flex flex-col items-center gap-10 self-end bg-secondary bg-opacity-20 p-20
+     w-3/4 md:w-1/2"
+     style="z-index: 2; text-shadow: 2px 2px black;">
 
-      <ArticlePreview v-if="article" class="w-1/2" :article="article" />
+      <h1 class="text-base-content self-center
+      text-2xl sm:text-3xl md:text-5xl"
+      >Something from the blog</h1>
+
+      <ArticlePreview v-if="article" class="" :article="article" />
     </div>
 
-    <div class="flex flex-col self-start bg-secondary bg-opacity-20 text-5xl gap-5 w-1/3 p-32" style="z-index: 2; text-shadow: 2px 2px black;">
+    <div class="flex flex-col self-start bg-secondary bg-opacity-20 gap-5 w-1/3 p-32 items-center text-center
+    text-2xl sm:text-3xl md:text-5xl"
+    style="z-index: 2; text-shadow: 2px 2px black;">
       <h1>Explore the artwork</h1>
       <button @click="" class="btn">Explore</button>
     </div>
@@ -46,8 +53,6 @@
 
     // query single blog post, why an array?
     const tinyArray = await queryContent().where(blogSlug).find()
-
-    console.log('tiny array', tinyArray[0])
 
     article.value = tinyArray[0]
 

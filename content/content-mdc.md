@@ -1,12 +1,14 @@
 ---
 title: Using Nuxt components in markdown.
 description: A few things I've learned about "Mark Down Components" aka "MDC"
-thumbnail: /images/vue-markdown.png
+thumbnail: /images/nuxt-markdown.png
 slug: content-mdc
 author: Tony Green
 draft: true
 
 ---
+
+For this article I will be using "Nuxt components" and "Vue components" interchangeably.
 
 # What are Markdown Components?
 
