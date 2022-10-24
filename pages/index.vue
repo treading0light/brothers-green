@@ -49,9 +49,9 @@
     const list = await queryContent().only('slug').find()
 
     // randomly select one slug object
-    const blogSlug = list[randInt(list.length -1)]
+    const blogSlug = list[randInt(list.length)]
 
-    // query single blog post, why an array?
+    // query single blog post, .find() returns array, .findOne() returns error.
     const tinyArray = await queryContent().where(blogSlug).find()
 
     article.value = tinyArray[0]
