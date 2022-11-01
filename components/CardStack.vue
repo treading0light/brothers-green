@@ -1,9 +1,9 @@
 <template>
 	<div class="min-h-screen flex flex-col items-center justify-center overflow-x-hidden">
 
-		<div class="flex gap-5">
-			<button @click="flip('back')">Prev</button>
-			<button @click="flip('forward')">Next</button>
+		<div class="flex gap-5 mb-10">
+			<button @click="flip('back')" class="text-3xl">Prev</button>
+			<button @click="flip('forward')" class="text-3xl">Next</button>
 		</div>
 
 		<div class="my-stack relative w-1/3 min-h-[400px]">

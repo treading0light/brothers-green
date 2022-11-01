@@ -1,7 +1,7 @@
 ---
 title: Make your own animated stack of elements.
-description: I show you how to make a stack of Divs that will flip positions
-thumbnail: /images/vue-markdown.png
+description: I show you how to make a stack of Divs that will flip positions.
+thumbnail: /images/card-stack.jpg
 slug: card-stack
 author: Tony Green
 draft: true

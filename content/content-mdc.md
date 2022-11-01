@@ -1,6 +1,6 @@
 ---
 title: Using Nuxt components in markdown.
-description: A few things I've learned about "Mark Down Components" aka "MDC"
+description: A few things I've learned about "Mark Down Components" aka "MDC".
 thumbnail: /images/nuxt-markdown.png
 slug: content-mdc
 author: Tony Green
