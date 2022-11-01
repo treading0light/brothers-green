@@ -58,7 +58,7 @@
 
   }
 
-  
+  article.value = randomBlog()
 
   const emit = defineEmits(['isHome'])
 
@@ -66,7 +66,6 @@
 
   onMounted(() => {
     isHome(true)
-    article.value = randomBlog()
   })
 
   onUnmounted(() => {
