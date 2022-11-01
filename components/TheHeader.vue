@@ -24,7 +24,6 @@
 <script setup>
 
 	const themes = [
-		'lofi',
 		'night',
 		'forest',
 		'dracula',
