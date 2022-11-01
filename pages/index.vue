@@ -43,28 +43,38 @@
 
   const randInt = (max) => Math.floor(Math.random() * max)
 
+  // const randomBlog = async () => {
+
+  //   // get slugs from all posts as an array of objects
+  //   const list = await queryContent().only('slug').find()
+
+  //   // randomly select one slug object
+  //   const blogSlug = list[randInt(list.length)]
+
+  //   // query single blog post, .find() returns array, .findOne() returns error.
+  //   const tinyArray = await queryContent().where(blogSlug).find()
+
+  //   article.value = tinyArray[0]
+
+  // }
+
   const randomBlog = async () => {
+    const list = await queryContent().find()
 
-    // get slugs from all posts as an array of objects
-    const list = await queryContent().only('slug').find()
-
-    // randomly select one slug object
-    const blogSlug = list[randInt(list.length)]
-
-    // query single blog post, .find() returns array, .findOne() returns error.
-    const tinyArray = await queryContent().where(blogSlug).find()
-
-    article.value = tinyArray[0]
-
+    const blog = list[randInt(list.length)]
+    
+    return blog
   }
 
-  article.value = randomBlog()
-
+ 
   const emit = defineEmits(['isHome'])
 
   const isHome = (bool) => emit('isHome', bool)
 
-  onMounted(() => {
+  onMounted(async () => {
+     article.value = await randomBlog()
+     console.log(article.value)
+
     isHome(true)
   })
 
