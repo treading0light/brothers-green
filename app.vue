@@ -23,6 +23,4 @@
 
 	const markHome = (bool) => home.value = bool
 
-
-
 </script>
