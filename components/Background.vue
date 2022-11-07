@@ -2,7 +2,7 @@
 	<div ref="bgDiv" class="w-screen min-h-screen fixed grid grid-cols-2 justify-items-center items-center md:gap-y-16 pointer-events-none"
 	style="z-index: ;">
 
-		<div v-if="exploreView == true" class="col-span-2 text-base-content md:text-2xl mt-16 bg-secondary bg-opacity-20 p-10">
+		<div v-if="exploreView === true" class="col-span-2 text-base-content md:text-2xl mt-16 bg-secondary bg-opacity-20 p-10">
 			<p>I created each of these images using Dall-e 2, the infamous AI artwork generator. I was trying to theme around two concepts, a couple brothers and technology. If you click an image you can read the text prompt that Dall-e was given to create it.</p>
 
 		</div>

@@ -2,7 +2,7 @@
   <div class="min-h-screen w-4/5 m-auto flex flex-col gap-32 items-center">
 
     <div class="w-full mt-28 flex flex-col items-center gap-10 text-center text-base-content
-    text-5xl" style="z-index: 2; text-shadow: 5px 5px black; font-family: 'UnifrakturCook', cursive;;">
+    text-5xl" style="z-index: 2; text-shadow: 5px 5px black; font-family: 'UnifrakturCook', cursive;">
       <h1>The Brothers</h1>
       <h1>Green</h1>
       <p class="text-xl">We can see the future.</p>
