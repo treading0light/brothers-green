@@ -5,7 +5,9 @@
 
 		<article class="prose w-full lg:prose-xl prose-code:bg-base-300 prose-code:text-base-content prose-code:p-5 prose-code:rounded-none prose-code:block prose-code:mb-20">
 
-			<ContentDoc :path="slug" />
+			<client-only>
+				<ContentDoc :path="slug" />
+			</client-only>
 
 		</article>
 
@@ -20,11 +22,7 @@
 	const route = useRoute()
 	const slug = route.params.slug.toString()
 
-	// console.log(slug)
-
-	// ContentDoc :path=path
-
-	// const { article } = await useAsyncData(() => 
-	// 	queryContent().where({slug: slug}).findOne()
-	// 	)
+	onMounted(() => {
+		window.scrollTo(0, 0)
+	})
 </script>
