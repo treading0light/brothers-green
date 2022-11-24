@@ -5,9 +5,9 @@
 
 		<article class="prose w-full lg:prose-xl prose-code:bg-base-300 prose-code:text-base-content prose-code:p-5 prose-code:rounded-none prose-code:block prose-code:mb-20">
 
-			<client-only>
+			
 				<ContentDoc :path="slug" />
-			</client-only>
+			
 
 		</article>
 
