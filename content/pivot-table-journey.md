@@ -12,7 +12,7 @@ draft: false
 
 I am building a project that has two tables with a many-to-many relationship in a MySql database. To do this I needed a third table, called a "pivot" table. Setting it up, establishing the relationship in my models, creating the migrations, these were all pretty straight-forward. Once I recieved the data on the front-end, I had some work to do and I learned a lot about the frameworks that I've been using in the process.
 
-This project is a recipe app (From what I hear, we've all made one) that will also provide users on an Auto Immune Protocol diet, a way to track which foods they introduce back into their lives. I am building it with Vue 3 with Laravel as it's API, an AIP-API if you will.
+This project is a recipe app (From what I hear, we've all made one) that will also provide users on an Auto Immune Protocol diet a way to track which foods they introduce back into their lives. I am building it with Vue 3 with Laravel as it's API, an AIP-API if you will.
 
 ## The Back End
 
