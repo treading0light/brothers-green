@@ -1,7 +1,7 @@
 ---
 title: Parsing Data From a Five Column Pivot Table.
 description: A tale of research and greater understanding.
-thumbnail: /images/nuxtjs-logo.png
+thumbnail: /images/database-visualization.png
 slug: pivot-table-journey
 author: Tony Green
 draft: false
